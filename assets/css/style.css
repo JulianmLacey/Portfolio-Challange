@@ -274,6 +274,7 @@
   height: fit-content;
   margin: 5%;
   align-items: center;
+  margin-block:50px;
 }
 
 .projects h4{
@@ -289,6 +290,7 @@
 .projects ul{
   list-style: none;
   list-style-type: none;
+  padding-block: 10px;
 }
 .projects .content{
   background-color: wheat;
@@ -302,7 +304,7 @@
   text-align: center;
   align-items: center;
 
-  padding-top: -10px;
+  padding-block: 10px;
 }
 .projects .content img{
   
@@ -345,4 +347,31 @@
 
 .footer h2 {
   font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  body header {
+    display: flexbox;
+    display: inline-flexbox;
+    flex-wrap: wrap;
+  }
+  body header h1{
+    display: block;
+  }
+  body header .button-1{
+    display: block;
+  }
+  body header div ul{
+    display: block;
+    flex-wrap: wrap;
+    float: none;
+  }
+
+  main {
+    max-width: 1200px;
+  }
+
+  main a {
+    font-size: medium;
+  }
 }
